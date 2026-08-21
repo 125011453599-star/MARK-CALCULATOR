@@ -1,5 +1,5 @@
 function calculateMarks() {
-
+function calculateMarks() {
     let s1 = Number(document.getElementById("sub1").value);
     let s2 = Number(document.getElementById("sub2").value);
     let s3 = Number(document.getElementById("sub3").value);
