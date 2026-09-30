@@ -1,0 +1,24 @@
+on:
+push:
+  BRANCES:["main"]
+  pull_request:
+  branches:["main]
+  jobs:
+  build-and_test:
+  runs-on:ubuntu-latest
+  steps:
+   -name:checkout source code
+   users:actions/ceckout@v4
+
+   -name:check projects files
+   run:|
+   echo "running Ci process...."
+   Is -la
+
+   -name:validate HTML
+   run:|
+   test -f index.html
+   echo"HTMl file exists"
+   -name:CI success
+   run :echo "Build and vALIDtion Completed Sucessfully!"
+   
